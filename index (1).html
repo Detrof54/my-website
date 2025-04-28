@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мудрость философии</title>
+  <script>
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/ВАШ_CLARITY_ID";
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "ВАШ_CLARITY_ID");
+  </script>
+ <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f0f0; color: #333; }
+    .header { background: #555; color: white; text-align: center; padding: 20px; }
+    .nav { display: flex; justify-content: center; gap: 20px; padding: 10px; background: #ccc; }
+    .nav a { text-decoration: none; color: #333; font-weight: bold; }
+    .container { max-width: 800px; margin: 20px auto; padding: 20px; background: #e0e0e0; border-radius: 10px; }
+    .button { padding: 10px 20px; background: #666; color: white; border: none; cursor: pointer; margin: 10px 0; border-radius: 5px; }
+    .button:hover { background: #444; }
+    .form-container { max-width: 400px; margin: 20px auto; padding: 20px; border: 1px solid #bbb; border-radius: 10px; background: #e0e0e0; }
+    .form-container input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #bbb; border-radius: 5px; background: #f9f9f9; }
+    .form-container button { width: 100%; padding: 10px; background: #666; color: white; border: none; cursor: pointer; border-radius: 5px; }
+    .form-container button:hover { background: #444; }
+    label { font-weight: bold; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Мудрость великих философов</h1>
+    <p>Изучаем мысли: Сократ, Платон, Аристотель, Ницше, Конфуций</p>
+  </div>
+
+  <div class="nav">
+    <a href="#socrates">Сократ</a>
+    <a href="#plato">Платон</a>
+    <a href="#aristotle">Аристотель</a>
+    <a href="#nietzsche">Ницше</a>
+    <a href="#confucius">Конфуций</a>
+    <a href="#register">Регистрация</a>
+  </div>
+
+  <div class="container" id="socrates">
+    <h2>Сократ</h2>
+    <button class="button" onclick="alert('Я знаю только то, что ничего не знаю. — Сократ')">Цитата Сократа</button>
+  </div>
+
+  <div class="container" id="plato">
+    <h2>Платон</h2>
+    <button class="button" onclick="alert('Мудрый человек говорит, потому что у него есть что сказать; глупый — потому что он должен что-то сказать. — Платон')">Цитата Платона</button>
+  </div>
+
+  <div class="container" id="aristotle">
+    <h2>Аристотель</h2>
+    <button class="button" onclick="alert('Цель искусства — доставлять удовольствие через истину. — Аристотель')">Цитата Аристотеля</button>
+  </div>
+
+  <div class="container" id="nietzsche">
+    <h2>Ницше</h2>
+    <button class="button" onclick="alert('Тот, кто имеет за что жить, может вынести почти любое как. — Ницше')">Цитата Ницше</button>
+  </div>
+
+  <div class="container" id="confucius">
+    <h2>Конфуций</h2>
+    <button class="button" onclick="alert('Выберите работу по душе, и вам не придется работать ни одного дня в жизни. — Конфуций')">Цитата Конфуция</button>
+  </div>
+
+  <div class="container form-container" id="register">
+    <h2>Регистрация</h2>
+    <form onsubmit="event.preventDefault(); alert('Регистрация успешна!');">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" placeholder="Введите ваше имя" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Введите ваш email" required>
+      
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" placeholder="Придумайте пароль" required>
+      
+      <label for="confirm-password">Подтверждение пароля:</label>
+      <input type="password" id="confirm-password" placeholder="Повторите пароль" required>
+      
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</body>
+</html>
